@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="" class="logo">
+  </header>
+
+  <section class="section">
+    <div class="sec-1">
+      <form class="bill-form">
+        <label for="bill">bill</label>
+        <img src="./images/icon-dollar.svg" alt="Dollar Sign"  class="bill">
+        <input type="number" id="bill" placeholder="0">
+      </form>
+      <h1>select tip %</h1>
+      <div class="tip-container">
+        <div class="five">5%</div>
+        <div class="ten">10%</div>
+        <div class="fifteen">15%</div>
+        <div class="twenty-five">25%</div>
+        <div class="fifty">50%</div>
+        <div class="custom"><input type="number" placeholder="Custom" id="custom"></div>
+      </div>
+      <form class="people-form">
+        <label for="people">number of peaple</label>
+        <img src="./images/icon-person.svg" alt="person" class="people">
+        <input type="number"  id="people" placeholder="0" >
+        <p class="cant">Can't be zero</p>
+      </form>
+    </div>
+
+    <div class="sec-2">
+      <div class="ouput">
+        <div class="tip-amount">
+          <div class="header-1">tip amount <span>/person</span></div>
+          <div class="out-1">$0.00</div>
+        </div>
+        <div class="total">
+          <div class="header-2">total <span>/person</span></div>
+          <div class="out-2">$0.00</div>
+        </div>
+      </div>
+      <button class="reset-btn">reset</button>
+    </div>
+  </section>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ABK-97?tab=repositories" target="_blank" >ABK</a>.
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>

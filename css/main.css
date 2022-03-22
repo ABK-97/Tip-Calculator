@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 80px;
+}
+.attribution {
+  margin-top: auto;
+}
+.section {
+  background-color: white;
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  border-radius: 15px;
+}
+.sec-1 {
+  width: 50%;
+  text-align: start;
+}
+.bill-form,
+.people-form {
+  position: relative;
+}
+.bill-form label,
+.people-form label {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #0000008c;
+  display: block;
+}
+.bill-form input,
+.people-form input {
+  width: 80%;
+  text-align: end;
+  padding: 3px 5px;
+  border: none;
+  background-color: #e4eaeb;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+.bill-form input:focus,
+.people-form input:focus,
+.custom input:focus {
+  border: 1px solid #3aaeb9;
+  outline: none;
+}
+.bill,
+.people {
+  position: absolute;
+  left: 14px;
+  bottom: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sec-1 h1 {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #0000008c;
+  margin-top: 4%;
+}
+.tip-container {
+  margin-top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 8px;
+  width: 80%;
+  margin-bottom: 4%;
+}
+.five,
+.ten,
+.fifteen,
+.twenty-five,
+.fifty,
+.custom {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  text-align: center;
+  width: calc(91% / 3);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.five:hover,
+.ten:hover,
+.fifteen:hover,
+.twenty-five:hover,
+.fifty:hover,
+.custom:hover {
+  color: black;
+  background-color: hsl(172, 67%, 45%);
+}
+.custom {
+  padding: 0;
+}
+.custom input {
+  width: 100%;
+  height: 100%;
+  text-align: end;
+  padding-right: 6px;
+  font-size: 20px;
+  border: none;
+  background-color: #e4eaeb;
+}
+.cant {
+  position: absolute;
+  color: #ff00009e;
+  right: 90px;
+  right: 72px;
+  font-size: 12px;
+  bottom: -22px;
+  display: none;
+}
+.people-form .cant-in {
+  border: 1px solid red;
+}
+.sec-2 {
+  background-color: hsl(183, 100%, 15%);
+  width: 50%;
+  text-align: start;
+  padding: 27px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.tip-amount,
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  color: #3aaeb9;
+}
+.header-1,
+.header-2 {
+  color: white;
+  font-size: 16px;
+}
+.header-1 span,
+.header-2 span {
+  display: block;
+  color: #ffffff4d;
+}
+.reset-btn {
+  margin-top: auto;
+  border-radius: 7px;
+  border: none;
+  padding: 7px;
+  font-size: 16px;
+  background-color: #3aaeb9;
+  text-transform: uppercase;
+  color: #0000009e;
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background-color: #74dbe5;
+  color: #000000;
+}
+
+.attribution {
+  margin-top: auto;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+.attribution a {
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: #1ef4ff;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    padding-top: 30px;
+  }
+  .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+  }
+  .sec-1 {
+    width: 100%;
+  }
+  .bill-form input,
+  .people-form input {
+    width: 100%;
+    padding: 5px 5px;
+  }
+  .tip-container {
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .five,
+  .ten,
+  .fifteen,
+  .twenty-five,
+  .fifty,
+  .custom {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    text-align: center;
+    width: calc(91% / 2);
+    height: calc(100% / 3);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .custom {
+    padding: 0;
+  }
+  .custom input {
+    height: 100%;
+    padding: 6px;
+    padding-right: 20%;
+    border-radius: 5px;
+  }
+  .cant {
+    right: 0px;
+  }
+  .sec-2 {
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+  }
+  .sec-1 {
+    width: 100%;
+  }
+  .bill-form input,
+  .people-form input {
+    width: 100%;
+    padding: 5px 5px;
+  }
+  .tip-container {
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .five,
+  .ten,
+  .fifteen,
+  .twenty-five,
+  .fifty,
+  .custom {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    text-align: center;
+    width: calc(91% / 2);
+    height: calc(100% / 3);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .custom {
+    padding: 0;
+  }
+  .custom input {
+    height: 100%;
+    padding: 6px;
+    padding-right: 20%;
+    border-radius: 5px;
+  }
+  .cant {
+    right: 0px;
+  }
+  .sec-2 {
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .section {
+    width: 70%;
+    padding: 35px;
+  }
+}
